@@ -3,9 +3,7 @@ import inflect
 
 
 
-def format_phone(phone):
-    digits = re.sub(r'\D', '', phone)
-    return f"+{digits[:2]} {digits[2:7]} {digits[7:]}"
+
 
 def format_currency(amount, symbol='$'):
     return f"{symbol}{amount:,.2f}"
